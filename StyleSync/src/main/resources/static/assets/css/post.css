@@ -1,0 +1,232 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+}
+
+.main-header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.search-container input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.search-container button {
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.icons a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+.mobile-view {
+    width: 600px; /* Mobile width */
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 70px; /* Adjust to fit below the main header */
+}
+
+.studio-header {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.studio-header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.studio-actions button {
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.content {
+    padding: 1rem;
+    background: linear-gradient(to right, #fff, #f9f9f9);
+}
+
+.guide, .influencers {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.guide-items, .influencer-items {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.guide-item, .influencer-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.guide-item img, .influencer-item img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.guide-item p, .influencer-item p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #ff3f6c;
+}
+
+.post {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    text-align: center; /* Center the main post content */
+  }
+  .post-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .post-actions,
+  .comment-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  .comment {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  .comment-image {
+    max-width: 150px; /* Adjust smaller image width */
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  .comments-container {
+    max-height: 400px; /* Adjust max height for scroll */
+    overflow-y: auto;
+  }
+  .fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 98%;
+    z-index: 1030; /* Adjust z-index as needed */
+    background-color: #ffffff;
+    padding: 1rem;
+    border-top: 1px solid #dee2e6;
+  }
+  /* Navbar styles */
+  .navbar-custom {
+    background: linear-gradient(90deg, #8ba5e4, #665cec); /* Gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  }
+  .navbar-custom .navbar-brand,
+  .navbar-custom .navbar-nav .nav-link {
+    color: #fff; /* Light text color */
+    font-size: 1.2rem; /* Larger font size */
+    font-weight: 500; /* Slightly bolder text */
+  }
+  .navbar-custom .navbar-nav .nav-link:hover {
+    color: #ff8a00; /* Text color on hover */
+    background-color: #ffffff; /* Background color on hover */
+    border-radius: 0.25rem; /* Rounded corners on hover */
+  }
+  /* Adjust form elements */
+  .comment-form {
+    display: flex;
+    align-items: flex-end;
+    width: 100%; /* Ensure full width */
+  }
+  .comment-form .form-control {
+    flex: 1;
+    margin-right: 8px; /* Add spacing between input and button */
+    height: 38px; /* Adjust height to reduce the size */
+  }
+  .comment-form .form-control-file {
+    flex: 0 0 200px;
+    margin-right: 8px; /* Add spacing between input and button */
+  }
+  .comment-form .btn {
+    width: 80px; /* Adjust button width */
+  }
+  
+  
